@@ -1,0 +1,1581 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>91糖心情深叉喔_治愈情感影像社区,记录每一份温柔陪伴</title>
+<meta name="description" content="91糖心情深叉喔官方网站，专注治愈系情感影像与真实故事记录的原创视频社区，汇聚优质创作者，深耕温暖内容生态，陪伴每一次心动与成长。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff8fa3'/%3E%3Cpath d='M32 48c-9-6-16-12-16-19a9 9 0 0 1 16-5 9 9 0 0 1 16 5c0 7-7 13-16 19z' fill='%23fff3f5'/%3E%3C/svg%3E">
+<style>
+:root{
+  --tq-bg:#fdf7f8;
+  --tq-surface:#ffffff;
+  --tq-pink:#ff7a95;
+  --tq-pink-deep:#e5577a;
+  --tq-plum:#5c3a4d;
+  --tq-ink:#3a2b33;
+  --tq-muted:#8a6c77;
+  --tq-line:#f2dfe4;
+  --tq-lav:#b79ce0;
+  --tq-cream:#fff1ea;
+  --tq-shadow:0 14px 34px rgba(190,110,132,.14);
+  --tq-radius:18px;
+  --tq-sticky:0px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--tq-bg);
+  color:var(--tq-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+section{scroll-margin-top:96px}
+.tq-wrap{width:min(1180px,92vw);margin:0 auto}
+
+/* ============ 顶栏 ============ */
+.tq-topbar{
+  background:linear-gradient(90deg,#ffd9e2,#f7d6f0 55%,#e8ddfb);
+  color:#7b3a55;
+  font-size:13.5px;
+  letter-spacing:.2px;
+}
+.tq-topbar-inner{
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  padding:9px 0;
+}
+.tq-topbar-badge{
+  background:#fff;border-radius:999px;padding:2px 11px;font-size:12px;
+  color:var(--tq-pink-deep);font-weight:700;flex:none;
+}
+.tq-topbar-text{flex:1 1 auto;min-width:200px}
+.tq-topbar-text b{color:#c33f66}
+.tq-topbar-link{color:#a3436b;font-weight:600;white-space:nowrap;text-decoration:underline;text-underline-offset:3px;flex:none}
+
+.tq-header{
+  position:sticky;top:0;z-index:60;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--tq-line);
+}
+.tq-header-inner{
+  display:flex;align-items:center;gap:22px;
+  padding:14px 0;
+}
+.tq-logo{display:flex;align-items:center;gap:10px;flex:none}
+.tq-logo-mark{
+  width:44px;height:44px;border-radius:14px;flex:none;
+  background:linear-gradient(140deg,#ff9db2,#c79bea);
+  display:grid;place-items:center;color:#fff;font-weight:800;font-size:17px;
+  box-shadow:0 8px 18px rgba(230,110,140,.3);
+  letter-spacing:-1px;
+}
+.tq-logo-txt strong{display:block;font-size:17.5px;letter-spacing:.5px;line-height:1.25}
+.tq-logo-txt span{display:block;font-size:11.5px;color:var(--tq-muted);letter-spacing:2px}
+
+.tq-nav{display:flex;gap:6px;flex:1 1 auto;flex-wrap:wrap}
+.tq-nav a{
+  padding:7px 12px;border-radius:10px;font-size:14.5px;color:#5d4852;font-weight:500;
+  transition:.22s;
+}
+.tq-nav a:hover{background:var(--tq-cream);color:var(--tq-pink-deep)}
+
+.tq-header-tools{display:flex;align-items:center;gap:10px;flex:none}
+.tq-search{
+  display:flex;align-items:center;gap:8px;
+  background:#fbf0f3;border:1px solid var(--tq-line);
+  border-radius:999px;padding:6px 8px 6px 14px;
+  transition:.22s;
+}
+.tq-search:focus-within{border-color:#ffb6c6;background:#fff;box-shadow:0 0 0 4px rgba(255,150,175,.16)}
+.tq-search input{
+  border:none;background:none;outline:none;font-size:13.5px;width:150px;color:var(--tq-ink);
+}
+.tq-search input::placeholder{color:#bb96a2}
+.tq-search button{
+  background:var(--tq-pink);color:#fff;border-radius:999px;
+  padding:5px 14px;font-size:13px;font-weight:600;
+}
+.tq-search button:hover{background:var(--tq-pink-deep)}
+.tq-burger{
+  display:none;width:42px;height:42px;border-radius:12px;
+  border:1px solid var(--tq-line);background:#fff;
+  font-size:19px;line-height:1;
+}
+.tq-search-echo{
+  display:none;font-size:13px;color:var(--tq-pink-deep);
+  background:#fff2f6;border-radius:10px;padding:8px 14px;margin:0 auto 12px;
+  width:min(1180px,92vw);
+}
+.tq-search-echo.is-on{display:block}
+
+/* ============ 首屏 ============ */
+.tq-hero{padding:48px 0 20px;position:relative;overflow:hidden}
+.tq-hero::before{
+  content:"";position:absolute;inset:auto auto -120px -120px;width:420px;height:420px;
+  background:radial-gradient(circle,rgba(255,180,200,.35),transparent 70%);
+  border-radius:50%;pointer-events:none;
+}
+.tq-hero-grid{
+  display:grid;grid-template-columns:1.02fr .98fr;gap:44px;align-items:center;
+  position:relative;
+}
+.tq-hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;border:1px solid var(--tq-line);
+  color:var(--tq-pink-deep);font-size:12.5px;font-weight:700;
+  padding:6px 14px;border-radius:999px;margin-bottom:18px;
+  box-shadow:0 6px 16px rgba(220,150,175,.14);
+}
+.tq-hero h1{
+  font-size:clamp(34px,4.6vw,54px);
+  line-height:1.18;letter-spacing:-1px;
+  color:var(--tq-plum);
+  margin-bottom:16px;
+}
+.tq-hero h1 em{
+  font-style:normal;
+  background:linear-gradient(90deg,#ff7a95,#b79ce0);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.tq-hero-lead{font-size:16px;color:#6f5560;max-width:560px;margin-bottom:22px}
+.tq-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.tq-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 22px;border-radius:12px;font-size:14.5px;font-weight:700;
+  transition:.24s;
+}
+.tq-btn-primary{
+  background:linear-gradient(135deg,#ff8fa7,#e5577a);
+  color:#fff;box-shadow:0 12px 24px rgba(229,87,122,.28);
+}
+.tq-btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 30px rgba(229,87,122,.34)}
+.tq-btn-ghost{
+  background:#fff;color:var(--tq-plum);border:1px solid var(--tq-line);
+}
+.tq-btn-ghost:hover{border-color:#ffb6c6;color:var(--tq-pink-deep)}
+.tq-hero-stats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:480px;
+}
+.tq-stat{
+  background:#fff;border:1px solid var(--tq-line);border-radius:14px;
+  padding:12px 14px;text-align:left;
+}
+.tq-stat b{display:block;font-size:21px;color:var(--tq-pink-deep);letter-spacing:-.5px;line-height:1.3}
+.tq-stat span{font-size:12.5px;color:var(--tq-muted)}
+
+.tq-hero-visual{position:relative}
+.tq-hero-main{
+  position:relative;border-radius:24px;overflow:hidden;
+  box-shadow:var(--tq-shadow);
+  aspect-ratio:16/11;
+  border:6px solid #fff;
+}
+.tq-hero-main img{width:100%;height:100%;object-fit:cover}
+.tq-hero-play{
+  position:absolute;inset:0;display:grid;place-items:center;
+  background:linear-gradient(0deg,rgba(60,30,45,.42),rgba(60,30,45,.05));
+}
+.tq-play-btn{
+  width:68px;height:68px;border-radius:50%;
+  background:rgba(255,255,255,.9);display:grid;place-items:center;
+  box-shadow:0 10px 26px rgba(0,0,0,.22);
+  transition:.25s;
+}
+.tq-play-btn::after{
+  content:"";width:0;height:0;margin-left:4px;
+  border-left:16px solid var(--tq-pink-deep);
+  border-top:10px solid transparent;border-bottom:10px solid transparent;
+}
+.tq-hero-main:hover .tq-play-btn{transform:scale(1.08)}
+.tq-hero-tag{
+  position:absolute;left:16px;top:16px;z-index:2;
+  background:rgba(255,255,255,.92);color:#b84066;
+  font-size:12px;font-weight:700;padding:4px 12px;border-radius:999px;
+}
+.tq-hero-float{
+  position:absolute;right:-14px;bottom:-24px;
+  background:#fff;border-radius:18px;padding:12px 16px;
+  box-shadow:0 16px 34px rgba(190,110,132,.2);
+  display:flex;align-items:center;gap:10px;
+  font-size:12.5px;color:var(--tq-muted);
+  border:1px solid var(--tq-line);
+}
+.tq-hero-float b{color:var(--tq-plum);font-size:14px;display:block;line-height:1.3}
+.tq-dot-live{
+  width:9px;height:9px;border-radius:50%;background:#ff5f85;
+  box-shadow:0 0 0 4px rgba(255,95,133,.18);flex:none;
+  animation:tqPulse 1.8s infinite;
+}
+@keyframes tqPulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+/* ============ 概述解析 ============ */
+.tq-about{padding:64px 0 10px}
+.tq-about-card{
+  background:#fff;border-radius:26px;border:1px solid var(--tq-line);
+  padding:44px clamp(22px,4vw,54px);
+  box-shadow:0 20px 44px rgba(200,140,160,.1);
+  position:relative;overflow:hidden;
+}
+.tq-about-card::after{
+  content:"";position:absolute;right:-90px;top:-90px;width:260px;height:260px;
+  background:radial-gradient(circle,rgba(183,156,224,.22),transparent 70%);
+  border-radius:50%;
+}
+.tq-sec-head{margin-bottom:26px;position:relative}
+.tq-sec-label{
+  display:inline-block;font-size:12px;font-weight:800;letter-spacing:2px;
+  color:var(--tq-pink-deep);background:#fff2f6;border-radius:999px;
+  padding:3px 13px;margin-bottom:12px;
+}
+.tq-sec-head h2{
+  font-size:clamp(24px,3vw,32px);color:var(--tq-plum);letter-spacing:-.5px;line-height:1.3;
+}
+.tq-sec-head p{color:var(--tq-muted);font-size:14.5px;margin-top:8px;max-width:720px}
+.tq-about-body{
+  columns:2;column-gap:38px;font-size:14.8px;color:#584450;
+}
+.tq-about-body p{margin-bottom:16px;break-inside:avoid}
+.tq-about-body h3{
+  font-size:16px;color:var(--tq-plum);margin:6px 0 10px;break-after:avoid;
+}
+.tq-about-body strong{color:var(--tq-pink-deep)}
+
+/* ============ 焦点内容 ============ */
+.tq-focus{padding:66px 0 10px}
+.tq-focus-grid{
+  display:grid;grid-template-columns:1.35fr 1fr;gap:22px;
+}
+.tq-focus-main{
+  position:relative;border-radius:22px;overflow:hidden;min-height:340px;
+  display:flex;align-items:flex-end;
+  box-shadow:var(--tq-shadow);
+}
+.tq-focus-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tq-focus-main::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(0deg,rgba(52,26,38,.82),rgba(52,26,38,.05) 62%);
+}
+.tq-focus-cap{position:relative;z-index:2;padding:26px;color:#fff}
+.tq-focus-cap span{
+  display:inline-block;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.35);
+  backdrop-filter:blur(6px);
+  font-size:12px;padding:3px 11px;border-radius:999px;margin-bottom:10px;
+}
+.tq-focus-cap h3{font-size:22px;line-height:1.4;margin-bottom:8px}
+.tq-focus-cap p{font-size:13.5px;color:rgba(255,255,255,.82);max-width:520px}
+.tq-focus-side{display:grid;gap:16px}
+.tq-mini{
+  display:grid;grid-template-columns:112px 1fr;gap:14px;align-items:center;
+  background:#fff;border:1px solid var(--tq-line);border-radius:16px;
+  padding:11px;transition:.24s;
+}
+.tq-mini:hover{transform:translateY(-3px);box-shadow:var(--tq-shadow);border-color:#ffc9d5}
+.tq-mini-thumb{border-radius:11px;overflow:hidden;aspect-ratio:16/10;background:#f7e6ea}
+.tq-mini-thumb img{width:100%;height:100%;object-fit:cover}
+.tq-mini h4{font-size:14.5px;line-height:1.45;color:var(--tq-plum);margin-bottom:4px}
+.tq-mini p{font-size:12px;color:var(--tq-muted);line-height:1.5}
+
+/* ============ 视频流 ============ */
+.tq-feed{padding:68px 0 10px}
+.tq-filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.tq-chip{
+  padding:6px 15px;border-radius:999px;font-size:13px;
+  background:#fff;border:1px solid var(--tq-line);color:#6d5561;
+  transition:.2s;
+}
+.tq-chip:hover{border-color:#ffb6c6;color:var(--tq-pink-deep)}
+.tq-chip.is-active{background:var(--tq-pink);border-color:var(--tq-pink);color:#fff;font-weight:600}
+.tq-video-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+}
+.tq-video-card{
+  background:#fff;border-radius:18px;overflow:hidden;
+  border:1px solid var(--tq-line);
+  display:flex;flex-direction:column;
+  transition:transform .26s,box-shadow .26s,border-color .26s;
+}
+.tq-video-card:hover{transform:translateY(-5px);box-shadow:0 20px 38px rgba(200,140,160,.16);border-color:#ffd0da}
+.tq-video-cover{position:relative;aspect-ratio:16/9;background:#f6e5e9;overflow:hidden}
+.tq-video-cover img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.tq-video-card:hover .tq-video-cover img{transform:scale(1.05)}
+.tq-video-cover::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(45,22,33,0) 45%,rgba(45,22,33,.5));
+}
+.tq-cover-tag{
+  position:absolute;left:10px;top:10px;z-index:2;
+  font-size:11.5px;font-weight:700;color:#fff;
+  background:rgba(229,87,122,.92);padding:2px 10px;border-radius:999px;
+}
+.tq-cover-time{
+  position:absolute;right:10px;bottom:10px;z-index:2;
+  font-size:11.5px;color:#fff;background:rgba(0,0,0,.5);
+  padding:1px 8px;border-radius:6px;
+}
+.tq-video-body{padding:15px 16px 16px;display:flex;flex-direction:column;flex:1}
+.tq-video-body h3{font-size:15.5px;line-height:1.5;color:var(--tq-plum);margin-bottom:7px}
+.tq-video-body p{font-size:12.8px;color:var(--tq-muted);line-height:1.6;flex:1}
+.tq-video-meta{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  font-size:12px;color:#9c7f8b;margin-top:12px;padding-top:11px;
+  border-top:1px dashed var(--tq-line);
+}
+.tq-avatar{
+  width:24px;height:24px;border-radius:50%;flex:none;
+  display:grid;place-items:center;font-size:11px;font-weight:800;color:#fff;
+}
+.tq-video-actions{margin-left:auto;display:flex;gap:6px}
+.tq-icon-btn{
+  width:30px;height:30px;border-radius:9px;display:grid;place-items:center;
+  font-size:13px;color:#a5818e;background:#fdf3f6;transition:.2s;
+}
+.tq-icon-btn:hover{background:#ffe4ec;color:var(--tq-pink-deep)}
+.tq-icon-btn.is-liked{background:#ffe0e8;color:#e5577a;font-weight:700}
+.tq-icon-btn.is-saved{background:#f1e7fd;color:#8f6bc9}
+
+/* ============ 专题 ============ */
+.tq-series{padding:68px 0 10px}
+.tq-series-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tq-series-card{
+  border-radius:20px;overflow:hidden;position:relative;
+  min-height:250px;display:flex;align-items:flex-end;
+  color:#fff;box-shadow:0 14px 30px rgba(180,120,140,.14);
+}
+.tq-series-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tq-series-card::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(0deg,rgba(45,22,33,.85),rgba(45,22,33,.08) 66%);
+}
+.tq-series-in{position:relative;z-index:2;padding:22px}
+.tq-series-in h3{font-size:18px;margin-bottom:6px}
+.tq-series-in p{font-size:12.8px;color:rgba(255,255,255,.8);margin-bottom:12px}
+.tq-series-state{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:11.5px;background:rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.3);
+  padding:2px 10px;border-radius:999px;
+}
+
+/* ============ 创作者 ============ */
+.tq-creators{padding:68px 0 10px}
+.tq-creator-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tq-creator-card{
+  background:#fff;border-radius:20px;border:1px solid var(--tq-line);
+  padding:22px;transition:.26s;position:relative;overflow:hidden;
+}
+.tq-creator-card:hover{transform:translateY(-4px);box-shadow:var(--tq-shadow)}
+.tq-creator-top{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.tq-creator-avatar{
+  width:56px;height:56px;border-radius:18px;flex:none;
+  display:grid;place-items:center;font-size:20px;font-weight:800;color:#fff;
+  box-shadow:0 8px 18px rgba(200,140,160,.24);
+}
+.tq-creator-top h3{font-size:16px;color:var(--tq-plum);line-height:1.3}
+.tq-creator-top span{font-size:12px;color:var(--tq-muted)}
+.tq-creator-card p{font-size:13.2px;color:#6f5560;line-height:1.7;margin-bottom:14px;min-height:66px}
+.tq-creator-stats{
+  display:flex;gap:14px;font-size:12.5px;color:var(--tq-muted);
+  border-top:1px dashed var(--tq-line);padding-top:12px;margin-bottom:14px;
+}
+.tq-creator-stats b{color:var(--tq-pink-deep);font-size:14px}
+.tq-creator-link{
+  font-size:13px;font-weight:700;color:var(--tq-pink-deep);
+  display:inline-flex;align-items:center;gap:5px;
+}
+.tq-creator-link:hover{text-decoration:underline;text-underline-offset:3px}
+
+/* ============ 影像墙 ============ */
+.tq-wall{padding:68px 0 10px}
+.tq-wall-grid{
+  display:grid;grid-template-columns:repeat(6,1fr);
+  grid-auto-rows:120px;gap:14px;
+}
+.tq-wall-item{
+  position:relative;border-radius:16px;overflow:hidden;
+  background:#f6e5e9;box-shadow:0 10px 22px rgba(190,130,150,.12);
+}
+.tq-wall-item img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.tq-wall-item:hover img{transform:scale(1.07)}
+.tq-wall-item.w2{grid-column:span 2}
+.tq-wall-item.h2{grid-row:span 2}
+.tq-wall-cap{
+  position:absolute;left:0;right:0;bottom:0;z-index:2;
+  padding:10px 12px;font-size:12px;color:#fff;
+  background:linear-gradient(0deg,rgba(45,22,33,.78),transparent);
+}
+
+/* ============ 评价 ============ */
+.tq-voice{padding:68px 0 10px}
+.tq-voice-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.tq-voice-card{
+  background:#fff;border-radius:18px;border:1px solid var(--tq-line);
+  padding:20px 22px;position:relative;
+}
+.tq-voice-card::before{
+  content:"“";position:absolute;right:20px;top:6px;
+  font-size:52px;color:#ffe1e8;font-family:Georgia,serif;line-height:1;
+}
+.tq-voice-head{display:flex;align-items:center;gap:11px;margin-bottom:10px}
+.tq-voice-head b{font-size:14px;color:var(--tq-plum)}
+.tq-voice-head span{font-size:11.5px;color:var(--tq-muted);display:block}
+.tq-voice-card p{font-size:13.5px;color:#634955;line-height:1.78;position:relative;z-index:2}
+
+/* ============ 灵感 / 榜单 ============ */
+.tq-inspire{padding:68px 0 10px}
+.tq-inspire-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:start}
+.tq-inspire-card{
+  background:linear-gradient(150deg,#fff,#fff5f7);
+  border:1px solid var(--tq-line);border-radius:22px;padding:28px;
+}
+.tq-inspire-card h3{font-size:18px;color:var(--tq-plum);margin-bottom:6px}
+.tq-inspire-card > p{font-size:13.5px;color:var(--tq-muted);margin-bottom:18px}
+.tq-idea-list{display:grid;gap:11px}
+.tq-idea{
+  display:flex;gap:12px;align-items:flex-start;
+  background:#fff;border:1px solid var(--tq-line);border-radius:13px;padding:12px 14px;
+}
+.tq-idea-index{
+  width:24px;height:24px;border-radius:8px;flex:none;
+  background:#ffe6ec;color:#d9506f;font-size:12px;font-weight:800;
+  display:grid;place-items:center;
+}
+.tq-idea b{font-size:13.5px;color:var(--tq-plum);display:block;margin-bottom:2px}
+.tq-idea span{font-size:12.3px;color:var(--tq-muted);line-height:1.6}
+.tq-rank-card{
+  background:#5c3a4d;color:#fff;border-radius:22px;padding:26px;
+  position:relative;overflow:hidden;
+}
+.tq-rank-card::after{
+  content:"";position:absolute;right:-60px;bottom:-60px;width:190px;height:190px;
+  border-radius:50%;background:radial-gradient(circle,rgba(255,150,180,.3),transparent 70%);
+}
+.tq-rank-card h3{font-size:17px;margin-bottom:4px}
+.tq-rank-card > p{font-size:12.5px;color:rgba(255,255,255,.6);margin-bottom:16px}
+.tq-rank-list{display:grid;gap:9px;position:relative;z-index:2}
+.tq-rank-row{
+  display:flex;align-items:center;gap:11px;
+  font-size:13px;color:rgba(255,255,255,.9);
+  padding:8px 0;border-bottom:1px solid rgba(255,255,255,.1);
+}
+.tq-rank-row:last-child{border-bottom:none}
+.tq-rank-num{
+  width:22px;height:22px;border-radius:7px;background:rgba(255,255,255,.14);
+  display:grid;place-items:center;font-size:11.5px;font-weight:800;flex:none;
+}
+.tq-rank-row:nth-child(1) .tq-rank-num{background:#ff7a95;color:#fff}
+.tq-rank-row:nth-child(2) .tq-rank-num{background:#c79bea;color:#fff}
+.tq-rank-row:nth-child(3) .tq-rank-num{background:#ffb26b;color:#fff}
+.tq-rank-row span.tq-rank-hot{margin-left:auto;font-size:11.5px;color:rgba(255,255,255,.55)}
+
+/* ============ 动态 ============ */
+.tq-news{padding:68px 0 10px}
+.tq-news-list{display:grid;gap:12px}
+.tq-news-item{
+  display:grid;grid-template-columns:96px 1fr auto;gap:16px;align-items:center;
+  background:#fff;border:1px solid var(--tq-line);border-radius:14px;
+  padding:14px 18px;transition:.22s;
+}
+.tq-news-item:hover{border-color:#ffc9d5;transform:translateX(3px)}
+.tq-news-date{font-size:12.5px;color:var(--tq-pink-deep);font-weight:700;letter-spacing:.5px}
+.tq-news-item h3{font-size:14.5px;color:var(--tq-plum);margin-bottom:2px}
+.tq-news-item p{font-size:12.5px;color:var(--tq-muted)}
+.tq-news-tag{
+  font-size:11.5px;background:#f4ebfd;color:#8f6bc9;border-radius:999px;padding:2px 11px;white-space:nowrap;
+}
+
+/* ============ FAQ ============ */
+.tq-faq{padding:68px 0 10px}
+.tq-faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.tq-faq details{
+  background:#fff;border:1px solid var(--tq-line);border-radius:14px;
+  padding:0 18px;transition:.22s;
+}
+.tq-faq details[open]{border-color:#ffc9d5;box-shadow:0 10px 24px rgba(200,140,160,.12)}
+.tq-faq summary{
+  list-style:none;cursor:pointer;padding:15px 0;
+  font-size:14.2px;color:var(--tq-plum);font-weight:600;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.tq-faq summary::-webkit-details-marker{display:none}
+.tq-faq summary::after{content:"+";font-size:18px;color:var(--tq-pink);flex:none;transition:.2s}
+.tq-faq details[open] summary::after{transform:rotate(45deg)}
+.tq-faq details p{font-size:13.2px;color:#6f5560;padding-bottom:16px;line-height:1.75}
+
+/* ============ 联系 ============ */
+.tq-contact{padding:68px 0 76px}
+.tq-contact-card{
+  background:linear-gradient(135deg,#fff2f6,#f5edff);
+  border-radius:26px;border:1px solid #f8dde6;
+  padding:clamp(26px,4vw,46px);
+  display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;
+}
+.tq-contact-card h2{font-size:clamp(22px,2.8vw,29px);color:var(--tq-plum);margin-bottom:12px;line-height:1.35}
+.tq-contact-card p{font-size:14px;color:#6f5560;margin-bottom:20px}
+.tq-contact-actions{display:flex;gap:10px;flex-wrap:wrap}
+.tq-contact-info{display:grid;gap:12px}
+.tq-contact-row{
+  background:#fff;border-radius:13px;padding:12px 16px;
+  font-size:13px;color:#6f5560;border:1px solid #f6e2e9;
+  display:flex;justify-content:space-between;gap:12px;
+}
+.tq-contact-row b{color:var(--tq-plum);font-size:13px}
+
+/* ============ 页脚 ============ */
+.tq-footer{
+  background:#4b2f40;color:rgba(255,255,255,.7);padding:48px 0 24px;
+}
+.tq-footer-grid{
+  display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px;
+  padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.12);
+}
+.tq-footer-brand strong{display:block;color:#fff;font-size:17px;margin-bottom:8px;letter-spacing:.5px}
+.tq-footer-brand p{font-size:12.8px;line-height:1.8;max-width:300px}
+.tq-footer-col h4{color:#fff;font-size:13.5px;margin-bottom:12px;font-weight:700}
+.tq-footer-col a{display:block;font-size:12.8px;margin-bottom:8px;color:rgba(255,255,255,.66);transition:.2s}
+.tq-footer-col a:hover{color:#ffb6c9}
+.tq-footer-bottom{
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  padding-top:20px;font-size:12px;color:rgba(255,255,255,.45);
+}
+.tq-footer-bottom a{color:rgba(255,255,255,.55)}
+.tq-footer-bottom a:hover{color:#ffb6c9}
+
+/* ============ 回顶 & Toast & 弹窗 ============ */
+.tq-totop{
+  position:fixed;right:22px;bottom:26px;z-index:70;
+  width:46px;height:46px;border-radius:14px;
+  background:#fff;border:1px solid var(--tq-line);
+  box-shadow:0 12px 26px rgba(190,110,132,.2);
+  display:grid;place-items:center;font-size:17px;color:var(--tq-pink-deep);
+  opacity:0;visibility:hidden;transform:translateY(12px);transition:.26s;
+}
+.tq-totop.is-on{opacity:1;visibility:visible;transform:none}
+.tq-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:#4b2f40;color:#fff;font-size:13px;padding:10px 20px;
+  border-radius:12px;box-shadow:0 16px 34px rgba(60,30,45,.3);
+  opacity:0;visibility:hidden;transition:.28s;z-index:90;max-width:84vw;text-align:center;
+}
+.tq-toast.is-on{opacity:1;visibility:visible;transform:translate(-50%,0)}
+
+.tq-modal{
+  position:fixed;inset:0;z-index:100;display:grid;place-items:center;
+  background:rgba(58,30,45,.45);backdrop-filter:blur(4px);
+  opacity:0;visibility:hidden;transition:.26s;padding:20px;
+}
+.tq-modal.is-on{opacity:1;visibility:visible}
+.tq-modal-box{
+  background:#fff;border-radius:20px;padding:28px;width:min(460px,100%);
+  box-shadow:0 26px 60px rgba(60,30,45,.28);position:relative;
+  transform:translateY(14px);transition:.26s;max-height:86vh;overflow:auto;
+}
+.tq-modal.is-on .tq-modal-box{transform:none}
+.tq-modal-box h3{font-size:17px;color:var(--tq-plum);margin-bottom:8px}
+.tq-modal-box p.tq-modal-sub{font-size:13px;color:var(--tq-muted);margin-bottom:16px}
+.tq-modal-close{
+  position:absolute;right:14px;top:12px;font-size:18px;color:#b08e9a;
+  width:30px;height:30px;border-radius:9px;display:grid;place-items:center;
+}
+.tq-modal-close:hover{background:#fdf0f4;color:var(--tq-pink-deep)}
+.tq-modal-box label{display:block;font-size:12.5px;color:#7a5d69;margin:12px 0 5px;font-weight:600}
+.tq-modal-box input,.tq-modal-box textarea,.tq-modal-box select{
+  width:100%;border:1px solid var(--tq-line);border-radius:10px;
+  padding:9px 12px;font-size:13.5px;font-family:inherit;outline:none;background:#fdf9fa;
+  color:var(--tq-ink);
+}
+.tq-modal-box input:focus,.tq-modal-box textarea:focus,.tq-modal-box select:focus{
+  border-color:#ffb6c6;background:#fff;
+}
+.tq-modal-box textarea{resize:vertical;min-height:76px}
+.tq-modal-submit{
+  width:100%;margin-top:18px;padding:11px;border-radius:11px;
+  background:linear-gradient(135deg,#ff8fa7,#e5577a);color:#fff;
+  font-size:14px;font-weight:700;box-shadow:0 10px 22px rgba(229,87,122,.24);
+}
+.tq-modal-submit:hover{opacity:.94}
+.tq-share-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:6px}
+.tq-share-btn{
+  border:1px solid var(--tq-line);border-radius:12px;padding:12px 6px;
+  font-size:12.5px;color:#6f5560;text-align:center;transition:.2s;
+}
+.tq-share-btn:hover{border-color:#ffb6c6;color:var(--tq-pink-deep);background:#fff6f9}
+.tq-share-btn b{display:block;font-size:18px;margin-bottom:4px}
+
+@media (max-width:1000px){
+  .tq-hero-grid{grid-template-columns:1fr;gap:32px}
+  .tq-focus-grid{grid-template-columns:1fr}
+  .tq-video-grid{grid-template-columns:repeat(2,1fr)}
+  .tq-series-grid,.tq-creator-grid{grid-template-columns:repeat(2,1fr)}
+  .tq-inspire-grid{grid-template-columns:1fr}
+  .tq-contact-card{grid-template-columns:1fr;gap:24px}
+  .tq-footer-grid{grid-template-columns:1fr 1fr}
+  .tq-search input{width:110px}
+}
+@media (max-width:760px){
+  .tq-nav{
+    position:absolute;left:0;right:0;top:100%;
+    background:#fff;border-bottom:1px solid var(--tq-line);
+    flex-direction:column;padding:10px 4vw 16px;gap:2px;
+    display:none;box-shadow:0 18px 30px rgba(190,130,150,.14);
+  }
+  .tq-nav.is-open{display:flex}
+  .tq-header-inner{position:relative;gap:12px}
+  .tq-burger{display:grid;place-items:center}
+  .tq-search{display:none}
+  .tq-hero-stats{grid-template-columns:repeat(3,1fr);gap:8px}
+  .tq-stat{padding:10px}
+  .tq-stat b{font-size:17px}
+  .tq-about-body{columns:1}
+  .tq-video-grid,.tq-series-grid,.tq-creator-grid,.tq-voice-grid,.tq-faq-grid{grid-template-columns:1fr}
+  .tq-wall-grid{grid-template-columns:repeat(3,1fr);grid-auto-rows:96px}
+  .tq-wall-item.w2{grid-column:span 2}
+  .tq-news-item{grid-template-columns:1fr;gap:6px}
+  .tq-news-tag{justify-self:start}
+  .tq-footer-grid{grid-template-columns:1fr}
+  .tq-hero-float{right:6px;bottom:-18px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 公告条 + 页头 吸顶 -->
+<div class="tq-topbar" id="tqTopbar">
+  <div class="tq-wrap tq-topbar-inner">
+    <span class="tq-topbar-badge">官方发布</span>
+    <span class="tq-topbar-text"><b>11月18日更新：</b>「情深叉喔·冬日心动篇」专题上线，新增 12 支原创治愈影像，同步开启年度投票与创作挑战报名。</span>
+    <a class="tq-topbar-link" href="#tqSeries">查看专题 →</a>
+  </div>
+</div>
+
+<header class="tq-header" id="tqHeader">
+  <div class="tq-wrap tq-header-inner">
+    <a class="tq-logo" href="#tqTop" aria-label="91糖心情深叉喔官方网站首页">
+      <span class="tq-logo-mark">糖</span>
+      <span class="tq-logo-txt">
+        <strong>91糖心情深叉喔</strong>
+        <span>治愈影像社区</span>
+      </span>
+    </a>
+    <nav class="tq-nav" id="tqNav" aria-label="主导航">
+      <a href="#tqTop">首页</a>
+      <a href="#tqFocus">焦点内容</a>
+      <a href="#tqFeed">热门影像</a>
+      <a href="#tqSeries">专题企划</a>
+      <a href="#tqCreators">创作者</a>
+      <a href="#tqNews">官方动态</a>
+      <a href="#tqFaq">帮助</a>
+      <a href="#tqContact">投稿联系</a>
+    </nav>
+    <div class="tq-header-tools">
+      <form class="tq-search" id="tqSearchForm" role="search">
+        <input type="search" id="tqSearchInput" placeholder="搜索影像 / 创作者 / 话题" aria-label="站内搜索">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="tq-burger" id="tqBurger" aria-label="展开导航" aria-expanded="false">☰</button>
+    </div>
+  </div>
+  <div class="tq-search-echo" id="tqSearchEcho" aria-live="polite"></div>
+</header>
+
+<main id="tqTop">
+
+  <!-- 首屏 -->
+  <section class="tq-hero">
+    <div class="tq-wrap tq-hero-grid">
+      <div class="tq-hero-text">
+        <span class="tq-hero-kicker">官方网站 · 原创正版 · 高清品质</span>
+        <h1>91糖心情深叉喔</h1>
+        <p class="tq-hero-lead">
+          这是一个把「心动」拍成影像的原创视频品牌。我们以温柔为底色，记录真实的情深瞬间——一杯热糖水的温度、一次久别的重逢、一句没说出口的挂念，都在镜头里被好好收藏。
+        </p>
+        <div class="tq-hero-actions">
+          <a class="tq-btn tq-btn-primary" href="#tqFeed">探索影像</a>
+          <a class="tq-btn tq-btn-ghost" href="#tqCreators">认识创作者</a>
+          <button class="tq-btn tq-btn-ghost" type="button" data-tq-open="submit">我要投稿</button>
+        </div>
+        <div class="tq-hero-stats">
+          <div class="tq-stat"><b data-tq-count="2860">2860</b><span>原创影像作品</span></div>
+          <div class="tq-stat"><b data-tq-count="42">42</b><span>签约创作者（位）</span></div>
+          <div class="tq-stat"><b data-tq-count="168">168</b><span>月度活跃话题</span></div>
+        </div>
+      </div>
+      <div class="tq-hero-visual">
+        <div class="tq-hero-main">
+          <span class="tq-hero-tag">品牌主视觉 · 情深切片</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 560'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffd3df'/%3E%3Cstop offset='0.55' stop-color='%23f6b9d4'/%3E%3Cstop offset='1' stop-color='%23c9a3e6'/%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23fff6f0'/%3E%3Cstop offset='1' stop-color='%23ffd6e2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='560' fill='url(%23g1)'/%3E%3Ccircle cx='600' cy='130' r='120' fill='%23fff' opacity='0.3'/%3E%3Ccircle cx='160' cy='450' r='170' fill='%23ff9ab6' opacity='0.28'/%3E%3Cpath d='M0 400 Q200 320 400 400 T800 380 V560 H0Z' fill='url(%23g2)' opacity='0.9'/%3E%3Cpath d='M400 240c-32-30-78-26-78 18 0 34 42 62 78 88 36-26 78-54 78-88 0-44-46-48-78-18z' fill='%23ff7a95' opacity='0.92'/%3E%3Cpath d='M400 262c-20-18-48-16-48 11 0 21 26 39 48 55 22-16 48-34 48-55 0-27-28-29-48-11z' fill='%23fff' opacity='0.55'/%3E%3Cg fill='%23ffffff' opacity='0.65'%3E%3Ccircle cx='120' cy='120' r='6'/%3E%3Ccircle cx='210' cy='80' r='4'/%3E%3Ccircle cx='300' cy='140' r='5'/%3E%3Ccircle cx='680' cy='300' r='5'/%3E%3Ccircle cx='720' cy='210' r='4'/%3E%3C/g%3E%3C/svg%3E" alt="91糖心情深叉喔品牌主视觉粉色心动画面">
+          <div class="tq-hero-play"><span class="tq-play-btn" aria-hidden="true"></span></div>
+        </div>
+        <div class="tq-hero-float">
+          <span class="tq-dot-live" aria-hidden="true"></span>
+          <span><b>冬日心动篇</b>正在更新</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌介绍与关键词解析 -->
+  <section class="tq-about" id="tqAbout">
+    <div class="tq-wrap">
+      <div class="tq-about-card">
+        <div class="tq-sec-head">
+          <span class="tq-sec-label">关于我们</span>
+          <h2>一个把情绪认真对待的原创视频品牌</h2>
+          <p>91糖心情深叉喔官方网站，是企业自建的内容社区与品牌门户，持续运营、长期更新，只做值得反复回看的精品影像。</p>
+        </div>
+        <div class="tq-about-body">
+          <p><strong>91糖心情深叉喔</strong>创立于一个很朴素的念头：那些细小却真实的情深，值得被认真拍摄。作为深耕治愈情感影像垂直领域的原创视频品牌，我们把镜头对准日常生活里的温柔时刻——不是戏剧化的煽情，而是可被验证的、带着体温的真实。我们相信，一段关系最动人的部分往往藏在细节里：谁记得你不吃香菜，谁在你加班时留了一盏灯，谁在雨天多带了一把伞。这些微小的证据，构成了「情深」的全部内容。</p>
+          <h3>我们做什么</h3>
+          <p>平台以自研的原创影像为核心，围绕「遇见、陪伴、告别、重逢」四条叙事线展开内容生态。我们设有情感短片、城市探索、人物访谈、生活记录、创作幕后五个常设栏目，每周固定更新。同时，我们为创作者提供从脚本、拍摄到剪辑的完整支持，鼓励多元表达与包容的创作氛围。在这里，观众不是被动接收者，而是社区的一部分：可以投票选出下周的拍摄主题，可以上传自己的片段参与共创挑战，也可以报名参加线下的影像分享会。</p>
+          <h3>为什么值得信赖</h3>
+          <p>我们坚持正版与高清两条底线。所有公开内容均为原创或已获授权，杜绝搬运；所有成片以高清标准输出，确保每一帧的情绪都不因画质而流失。品牌成立至今，我们保持着稳定的更新节奏与真实的口碑积累，依靠持续运营而非短期热度成长。行业领先不是一句口号，而是我们愿意把每一条内容都做到可以署名、可以回访、可以交代的标准。</p>
+          <h3>关于「糖心」与「情深叉喔」</h3>
+          <p>「糖心」是品牌的气质：像一颗含在嘴里慢慢化开的糖，甜而不腻，暖而不灼。我们希望影像有糖的质感——入口柔软，回味长久。「情深叉喔」是我们对内容的理解：情深不是一个抽象形容词，而是一个具体动作，是在某个岔路口依然选择靠近。这个略带口语化与俏皮的表达，正是品牌想要传递的态度——认真对待感情，但不必严肃到失去温度。</p>
+          <h3>社区与陪伴</h3>
+          <p>目前社区聚集了数十位长期合作的创作者，覆盖情感叙事、城市影像、音乐现场、手作记录等方向。我们组织了「心动征集」「年度投票」「创作挑战」等常态化活动，让创作者与观众之间有真实的交流通道。我们相信社区的活力来自双向奔赴：平台提供专业支持与社会责任担当，创作者提供真诚的表达，观众提供真实的反馈。三者共同构成了这个不断成长的内容生态。</p>
+          <p>无论你是想找一个安静的角落看一段影像，还是希望把自己拍下的故事分享给更多人，91糖心情深叉喔官方网站都愿意成为那个稳妥的入口。用户至上、匠心制作、创新表达，是我们对每一位来访者的承诺。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="tq-focus" id="tqFocus">
+    <div class="tq-wrap">
+      <div class="tq-sec-head">
+        <span class="tq-sec-label">焦点内容</span>
+        <h2>本周值得完整看完的四支影像</h2>
+        <p>由编辑部与社区共同推选，聚焦情深主题下的不同切面。</p>
+      </div>
+      <div class="tq-focus-grid">
+        <article class="tq-focus-main">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 620'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233b2a4d'/%3E%3Cstop offset='.5' stop-color='%236b4a6e'/%3E%3Cstop offset='1' stop-color='%23d4849c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='620' fill='url(%23f1)'/%3E%3Ccircle cx='700' cy='160' r='90' fill='%23ffe9b8' opacity='.8'/%3E%3Ccircle cx='700' cy='160' r='120' fill='%23ffe9b8' opacity='.18'/%3E%3Cpath d='M0 470 Q160 390 330 450 T680 430 T900 470 V620 H0Z' fill='%232b1e38' opacity='.85'/%3E%3Cg fill='%23ffd9e2'%3E%3Crect x='250' y='330' width='10' height='120' rx='5'/%3E%3Crect x='262' y='360' width='10' height='90' rx='5'/%3E%3C/g%3E%3Ccircle cx='256' cy='320' r='26' fill='%23ffb3c6' opacity='.85'/%3E%3Cpath d='M420 430 q60-90 130-40 q60 44 120 0' stroke='%23ffd9e2' stroke-width='4' fill='none' opacity='.6'/%3E%3Cg fill='%23ffffff' opacity='.5'%3E%3Ccircle cx='150' cy='120' r='3'/%3E%3Ccircle cx='320' cy='90' r='2.5'/%3E%3Ccircle cx='520' cy='140' r='3'/%3E%3Ccircle cx='640' cy='60' r='2'/%3E%3C/g%3E%3C/svg%3E" alt="夜色路灯下久别重逢的两人剪影短片封面">
+          <div class="tq-focus-cap">
+            <span>焦点 · 情感短片</span>
+            <h3>《路灯下的第三把伞》——重逢那天下了整夜的雨</h3>
+            <p>一支关于「等了六年还是选择靠近」的 9 分钟短片。拍摄于老城区一条没有路灯的路，导演坚持用自然光完成全部镜头，男主角的沉默比台词更响。上线三天，社区留言超过两千条。</p>
+          </div>
+        </article>
+        <div class="tq-focus-side">
+          <article class="tq-mini">
+            <div class="tq-mini-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cdefs%3E%3ClinearGradient id='m1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffe9d6'/%3E%3Cstop offset='1' stop-color='%23ffb9a3'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='320' height='200' fill='url(%23m1)'/%3E%3Crect x='40' y='110' width='240' height='14' rx='7' fill='%23d98b74' opacity='.5'/%3E%3Ccircle cx='120' cy='80' r='34' fill='%23fff' opacity='.75'/%3E%3Ccircle cx='200' cy='80' r='34' fill='%23fff' opacity='.75'/%3E%3Cpath d='M90 130 q30 30 70 0' stroke='%23c9614d' stroke-width='5' fill='none'/%3E%3C/svg%3E" alt="厨房里两碗热糖水的生活影像封面">
+            </div>
+            <div>
+              <h4>《两碗糖水》——出租屋里的第一个冬天</h4>
+              <p>生活记录 · 6:24 · 播放 4.8 万</p>
+            </div>
+          </article>
+          <article class="tq-mini">
+            <div class="tq-mini-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cdefs%3E%3ClinearGradient id='m2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23cfe0f3'/%3E%3Cstop offset='1' stop-color='%23a5c4e8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='320' height='200' fill='url(%23m2)'/%3E%3Cpath d='M0 150 L70 90 L130 150 Z' fill='%237fa6cf'/%3E%3Cpath d='M110 150 L190 70 L270 150 Z' fill='%235d85b3'/%3E%3Ccircle cx='255' cy='48' r='20' fill='%23fff7d6'/%3E%3Cpath d='M0 150 H320 V200 H0Z' fill='%233f5f80' opacity='.5'/%3E%3C/svg%3E" alt="城市清晨街道城市探索影像封面">
+            </div>
+            <div>
+              <h4>《六点半的城》——写给早班人的一封情书</h4>
+              <p>城市探索 · 8:10 · 播放 3.2 万</p>
+            </div>
+          </article>
+          <article class="tq-mini">
+            <div class="tq-mini-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cdefs%3E%3ClinearGradient id='m3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e6d7f7'/%3E%3Cstop offset='1' stop-color='%23b79ce0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='320' height='200' fill='url(%23m3)'/%3E%3Ccircle cx='160' cy='100' r='52' fill='%23fff' opacity='.6'/%3E%3Cpath d='M160 128c-14-12-26-22-26-34 0-14 18-18 26-4 8-14 26-10 26 4 0 12-12 22-26 34z' fill='%238a63c0'/%3E%3C/svg%3E" alt="手写信与旧照片人物访谈封面">
+            </div>
+            <div>
+              <h4>《她留了十七封信》——访谈：异地第十年</h4>
+              <p>人物访谈 · 12:37 · 播放 5.6 万</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门影像 -->
+  <section class="tq-feed" id="tqFeed">
+    <div class="tq-wrap">
+      <div class="tq-sec-head">
+        <span class="tq-sec-label">热门影像</span>
+        <h2>社区正在看的原创作品</h2>
+        <p>按标签快速筛选你感兴趣的方向，点击卡片上的收藏与点赞即可参与互动。</p>
+      </div>
+      <div class="tq-filter" id="tqFilter" role="tablist" aria-label="影像标签筛选">
+        <button class="tq-chip is-active" data-tq-chip="all" type="button">全部</button>
+        <button class="tq-chip" data-tq-chip="情感" type="button">情感短片</button>
+        <button class="tq-chip" data-tq-chip="生活" type="button">生活记录</button>
+        <button class="tq-chip" data-tq-chip="城市" type="button">城市探索</button>
+        <button class="tq-chip" data-tq-chip="访谈" type="button">人物访谈</button>
+        <button class="tq-chip" data-tq-chip="幕后" type="button">创作幕后</button>
+      </div>
+      <div class="tq-video-grid" id="tqVideoGrid">
+
+        <article class="tq-video-card" data-tq-cat="情感">
+          <div class="tq-video-cover">
+            <span class="tq-cover-tag">情感短片</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='v1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffe1e8'/%3E%3Cstop offset='1' stop-color='%23f3a6c4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23v1)'/%3E%3Ccircle cx='240' cy='132' r='56' fill='%23fff' opacity='.55'/%3E%3Cpath d='M240 168c-26-22-48-40-48-62 0-24 32-30 48-8 16-22 48-16 48 8 0 22-22 40-48 62z' fill='%23d9506f' opacity='.85'/%3E%3Cpath d='M0 220 Q120 190 240 220 T480 210 V270 H0Z' fill='%23fff' opacity='.4'/%3E%3C/svg%3E" alt="心形光斑的告白情感短片封面">
+            <span class="tq-cover-time">07:42</span>
+          </div>
+          <div class="tq-video-body">
+            <h3>《把喜欢说成晚安》</h3>
+            <p>连续九十天，他每晚只发一句晚安。直到她搬走的那天，才看见他手机里存下的全部草稿。</p>
+            <div class="tq-video-meta">
+              <span class="tq-avatar" style="background:#e5577a">沈</span>
+              <span>沈知夏</span>
+              <div class="tq-video-actions">
+                <button class="tq-icon-btn" data-tq-like type="button" aria-label="点赞">♥<span data-tq-like-num>1286</span></button>
+                <button class="tq-icon-btn" data-tq-save type="button" aria-label="收藏">☆</button>
+                <button class="tq-icon-btn" data-tq-comment data-title="把喜欢说成晚安" type="button" aria-label="评论">✎</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="tq-video-card" data-tq-cat="生活">
+          <div class="tq-video-cover">
+            <span class="tq-cover-tag">生活记录</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='v2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23ffe8c9'/%3E%3Cstop offset='1' stop-color='%23f6b98f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23v2)'/%3E%3Crect x='90' y='150' width='300' height='12' rx='6' fill='%23c07f5c' opacity='.55'/%3E%3Ccircle cx='170' cy='110' r='30' fill='%23fff' opacity='.72'/%3E%3Ccircle cx='300' cy='110' r='30' fill='%23fff' opacity='.72'/%3E%3Cpath d='M140 150 q40 26 80 0 M240 150 q40 26 80 0' stroke='%23b96a49' stroke-width='4' fill='none'/%3E%3Crect x='210' y='40' width='6' height='60' rx='3' fill='%23c07f5c' opacity='.4'/%3E%3C/svg%3E" alt="木桌上两碗糖水生活记录封面">
+            <span class="tq-cover-time">06:24</span>
+          </div>
+          <div class="tq-video-body">
+            <h3>《冬天要煮两碗糖水》</h3>
+            <p>合租第一年，她学会用一口小锅煮甜汤。后来搬走了，锅留在了厨房，糖水还照旧煮两碗。</p>
+            <div class="tq-video-meta">
+              <span class="tq-avatar" style="background:#dd8a4f">阿</span>
+              <span>阿栀的厨房</span>
+              <div class="tq-video-actions">
+                <button class="tq-icon-btn" data-tq-like type="button" aria-label="点赞">♥<span data-tq-like-num>932</span></button>
+                <button class="tq-icon-btn" data-tq-save type="button" aria-label="收藏">☆</button>
+                <button class="tq-icon-btn" data-tq-comment data-title="冬天要煮两碗糖水" type="button" aria-label="评论">✎</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="tq-video-card" data-tq-cat="城市">
+          <div class="tq-video-cover">
+            <span class="tq-cover-tag">城市探索</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='v3' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23cfdcf0'/%3E%3Cstop offset='1' stop-color='%237992b8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23v3)'/%3E%3Cg fill='%234a628a' opacity='.8'%3E%3Crect x='40' y='120' width='52' height='150'/%3E%3Crect x='104' y='80' width='44' height='190'/%3E%3Crect x='160' y='140' width='60' height='130'/%3E%3Crect x='232' y='60' width='38' height='210'/%3E%3Crect x='282' y='110' width='56' height='160'/%3E%3Crect x='350' y='150' width='46' height='120'/%3E%3Crect x='408' y='96' width='40' height='174'/%3E%3C/g%3E%3Cg fill='%23ffe9b8' opacity='.85'%3E%3Crect x='118' y='100' width='8' height='12'/%3E%3Crect x='134' y='124' width='8' height='12'/%3E%3Crect x='244' y='88' width='8' height='12'/%3E%3Crect x='296' y='130' width='8' height='12'/%3E%3C/g%3E%3Ccircle cx='392' cy='52' r='22' fill='%23fff4d0' opacity='.9'/%3E%3C/svg%3E" alt="清晨城市楼群天际线城市影像封面">
+            <span class="tq-cover-time">08:10</span>
+          </div>
+          <div class="tq-video-body">
+            <h3>《六点半的城，八点半的人》</h3>
+            <p>拍摄早班公交的第十七天。司机说，总有一个姑娘在第三站上车，手里永远提着两份早餐。</p>
+            <div class="tq-video-meta">
+              <span class="tq-avatar" style="background:#5d7fa8">周</span>
+              <span>周末取景器</span>
+              <div class="tq-video-actions">
+                <button class="tq-icon-btn" data-tq-like type="button" aria-label="点赞">♥<span data-tq-like-num>745</span></button>
+                <button class="tq-icon-btn" data-tq-save type="button" aria-label="收藏">☆</button>
+                <button class="tq-icon-btn" data-tq-comment data-title="六点半的城，八点半的人" type="button" aria-label="评论">✎</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="tq-video-card" data-tq-cat="访谈">
+          <div class="tq-video-cover">
+            <span class="tq-cover-tag">人物访谈</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='v4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23efe3fb'/%3E%3Cstop offset='1' stop-color='%23b79ce0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23v4)'/%3E%3Crect x='60' y='60' width='150' height='190' rx='10' fill='%23fff' opacity='.62'/%3E%3Cg stroke='%239c80c4' stroke-width='3' opacity='.7'%3E%3Cpath d='M82 96 H188'/%3E%3Cpath d='M82 120 H176'/%3E%3Cpath d='M82 144 H188'/%3E%3Cpath d='M82 168 H150'/%3E%3C/g%3E%3Ccircle cx='330' cy='120' r='46' fill='%238a63c0' opacity='.8'/%3E%3Cpath d='M330 106c-10-9-20-8-20 3 0 9 11 16 20 23 9-7 20-14 20-23 0-11-10-12-20-3z' fill='%23fff' opacity='.8'/%3E%3Crect x='286' y='176' width='88' height='10' rx='5' fill='%23fff' opacity='.5'/%3E%3C/svg%3E" alt="旧信件与访谈人物剪影封面">
+            <span class="tq-cover-time">12:37</span>
+          </div>
+          <div class="tq-video-body">
+            <h3>《十七封信，十年异地》</h3>
+            <p>她说年轻时觉得情书矫情，现在每年生日都会重读一遍。这一次，她把信读给了镜头。</p>
+            <div class="tq-video-meta">
+              <span class="tq-avatar" style="background:#8f6bc9">林</span>
+              <span>林间访谈录</span>
+              <div class="tq-video-actions">
+                <button class="tq-icon-btn" data-tq-like type="button" aria-label="点赞">♥<span data-tq-like-num>1584</span></button>
+                <button class="tq-icon-btn" data-tq-save type="button" aria-label="收藏">☆</button>
+                <button class="tq-icon-btn" data-tq-comment data-title="十七封信，十年异地" type="button" aria-label="评论">✎</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="tq-video-card" data-tq-cat="幕后">
+          <div class="tq-video-cover">
+            <span class="tq-cover-tag">创作幕后</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='v5' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23bfe3d6'/%3E%3Cstop offset='1' stop-color='%2373a894'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23v5)'/%3E%3Crect x='150' y='70' width='180' height='120' rx='14' fill='%23334f45' opacity='.85'/%3E%3Ccircle cx='240' cy='130' r='34' fill='%23d8f2e8' opacity='.8'/%3E%3Ccircle cx='240' cy='130' r='16' fill='%2373a894'/%3E%3Crect x='120' y='200' width='240' height='10' rx='5' fill='%23fff' opacity='.45'/%3E%3Cpath d='M120 200 L90 230 M360 200 L390 230' stroke='%23fff' stroke-width='5' opacity='.45'/%3E%3C/svg%3E" alt="摄影机与灯光创作幕后现场封面">
+            <span class="tq-cover-time">10:05</span>
+          </div>
+          <div class="tq-video-body">
+            <h3>《一个镜头拍了四十七遍》</h3>
+            <p>关于《路灯下的第三把伞》的幕后。导演说不是苛刻，是那天的雨只对了四十七次。</p>
+            <div class="tq-video-meta">
+              <span class="tq-avatar" style="background:#4f8a76">顾</span>
+              <span>顾此工作室</span>
+              <div class="tq-video-actions">
+                <button class="tq-icon-btn" data-tq-like type="button" aria-label="点赞">♥<span data-tq-like-num>608</span></button>
+                <button class="tq-icon-btn" data-tq-save type="button" aria-label="收藏">☆</button>
+                <button class="tq-icon-btn" data-tq-comment data-title="一个镜头拍了四十七遍" type="button" aria-label="评论">✎</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="tq-video-card" data-tq-cat="情感">
+          <div class="tq-video-cover">
+            <span class="tq-cover-tag">情感短片</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='v6' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23ffddd0'/%3E%3Cstop offset='1' stop-color='%23e88e88'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23v6)'/%3E%3Cpath d='M90 200 Q170 130 250 200 T410 190' stroke='%23fff' stroke-width='6' fill='none' opacity='.6'/%3E%3Ccircle cx='160' cy='120' r='26' fill='%23fff' opacity='.8'/%3E%3Ccircle cx='320' cy='120' r='26' fill='%23fff' opacity='.8'/%3E%3Cpath d='M186 120 h108' stroke='%23b4463f' stroke-width='4' opacity='.45' stroke-dasharray='8 8'/%3E%3Cg fill='%23fff' opacity='.55'%3E%3Ccircle cx='90' cy='70' r='4'/%3E%3Ccircle cx='390' cy='60' r='5'/%3E%3Ccircle cx='430' cy='160' r='3'/%3E%3C/g%3E%3C/svg%3E" alt="两端相连的心动连线情感封面">
+            <span class="tq-cover-time">05:18</span>
+          </div>
+          <div class="tq-video-body">
+            <h3>《我们中间隔了一整个夏天》</h3>
+            <p>两地分居的第三个月，他们约定每天拍三秒钟给对方。这些碎片剪在一起，变成了一部片子。</p>
+            <div class="tq-video-meta">
+              <span class="tq-avatar" style="background:#d1655f">许</span>
+              <span>许愿三分</span>
+              <div class="tq-video-actions">
+                <button class="tq-icon-btn" data-tq-like type="button" aria-label="点赞">♥<span data-tq-like-num>1103</span></button>
+                <button class="tq-icon-btn" data-tq-save type="button" aria-label="收藏">☆</button>
+                <button class="tq-icon-btn" data-tq-comment data-title="我们中间隔了一整个夏天" type="button" aria-label="评论">✎</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="tq-series" id="tqSeries">
+    <div class="tq-wrap">
+      <div class="tq-sec-head">
+        <span class="tq-sec-label">专题企划</span>
+        <h2>持续更新的长期选题</h2>
+        <p>每个专题都由品牌策划、创作者共拍、社区投票共同构成，欢迎参与报名与上传。</p>
+      </div>
+      <div class="tq-series-grid">
+        <article class="tq-series-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 420'%3E%3Cdefs%3E%3ClinearGradient id='s1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffcfdc'/%3E%3Cstop offset='1' stop-color='%23c79bdc'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='420' fill='url(%23s1)'/%3E%3Cpath d='M0 300 Q150 240 300 300 T600 290 V420 H0Z' fill='%23fff' opacity='.35'/%3E%3Ccircle cx='300' cy='180' r='70' fill='%23fff' opacity='.55'/%3E%3Cpath d='M300 220c-20-17-38-31-38-49 0-19 25-24 38-6 13-18 38-13 38 6 0 18-18 32-38 49z' fill='%23d9506f' opacity='.85'/%3E%3C/svg%3E" alt="冬日心动篇专题粉色心动主视觉">
+          <div class="tq-series-in">
+            <h3>冬日心动篇</h3>
+            <p>在寒冷季节里收集温暖，实录十二个关于靠近的瞬间。</p>
+            <span class="tq-series-state">更新至第 12 期 · 持续更新</span>
+          </div>
+        </article>
+        <article class="tq-series-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 420'%3E%3Cdefs%3E%3ClinearGradient id='s2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%233f4f68'/%3E%3Cstop offset='1' stop-color='%2398a9c4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='420' fill='url(%23s2)'/%3E%3Cg fill='%23fff' opacity='.2'%3E%3Ccircle cx='120' cy='90' r='3'/%3E%3Ccircle cx='260' cy='60' r='2'/%3E%3Ccircle cx='420' cy='110' r='3'/%3E%3Ccircle cx='520' cy='70' r='2'/%3E%3C/g%3E%3Crect x='60' y='250' width='480' height='18' rx='9' fill='%23fff' opacity='.18'/%3E%3Cpath d='M120 250 V180 H220 V250 M280 250 V150 H380 V250' stroke='%23ffe9b8' stroke-width='5' fill='none' opacity='.7'/%3E%3C/svg%3E" alt="城市夜归人专题夜景城市剪影">
+          <div class="tq-series-in">
+            <h3>夜归人计划</h3>
+            <p>记录城市入夜后仍在路上的人，灯光是他们的旁白。</p>
+            <span class="tq-series-state">更新至第 8 期 · 报名中</span>
+          </div>
+        </article>
+        <article class="tq-series-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 420'%3E%3Cdefs%3E%3ClinearGradient id='s3' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23e6d3bb'/%3E%3Cstop offset='1' stop-color='%23b58a5f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='420' fill='url(%23s3)'/%3E%3Crect x='100' y='140' width='400' height='200' rx='12' fill='%23fff' opacity='.5'/%3E%3Cg stroke='%23a4703f' stroke-width='4' opacity='.7'%3E%3Cpath d='M140 190 H460'/%3E%3Cpath d='M140 230 H420'/%3E%3Cpath d='M140 270 H450'/%3E%3C/g%3E%3Ccircle cx='480' cy='90' r='34' fill='%23ffe9b8' opacity='.8'/%3E%3C/svg%3E" alt="手写信件铺陈的旧时光专题">
+          <div class="tq-series-in">
+            <h3>写给你的旧时光</h3>
+            <p>书信、旧照片与老物件，串起不被遗忘的深情。</p>
+            <span class="tq-series-state">更新至第 6 期 · 投票中</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者 -->
+  <section class="tq-creators" id="tqCreators">
+    <div class="tq-wrap">
+      <div class="tq-sec-head">
+        <span class="tq-sec-label">创作者矩阵</span>
+        <h2>把镜头交到对的人手里</h2>
+        <p>他们来自不同城市、不同职业，但都愿意为一段真实的情绪反复打磨。</p>
+      </div>
+      <div class="tq-creator-grid">
+        <article class="tq-creator-card">
+          <div class="tq-creator-top">
+            <span class="tq-creator-avatar" style="background:linear-gradient(135deg,#ff9fb5,#e5577a)">沈</span>
+            <div><h3>沈知夏</h3><span>情感短片 · 叙事</span></div>
+          </div>
+          <p>前广告文案，现独立导演。擅长用极简对白讲完整故事，认为沉默是最高级的台词。代表作品《把喜欢说成晚安》。</p>
+          <div class="tq-creator-stats"><span>作品 <b>86</b></span><span>关注者 <b>12.4万</b></span></div>
+          <button class="tq-creator-link" data-tq-author="沈知夏" data-tq-bio="前广告文案，现独立导演。擅长用极简对白讲完整故事，认为沉默是最高级的台词。代表作《把喜欢说成晚安》《路灯下的第三把伞》。" type="button">查看档案 →</button>
+        </article>
+        <article class="tq-creator-card">
+          <div class="tq-creator-top">
+            <span class="tq-creator-avatar" style="background:linear-gradient(135deg,#ffc98f,#dd8a4f)">栀</span>
+            <div><h3>阿栀的厨房</h3><span>生活记录 · 治愈</span></div>
+          </div>
+          <p>记录一人食与合租日常。她说厨房是家里最诚实的地方，谁靠近灶台，谁就容易被看见。</p>
+          <div class="tq-creator-stats"><span>作品 <b>134</b></span><span>关注者 <b>8.7万</b></span></div>
+          <button class="tq-creator-link" data-tq-author="阿栀的厨房" data-tq-bio="生活记录创作者，专注一人食与合租日常。坚持自然光拍摄，认为厨房是家里最诚实的空间。代表作《冬天要煮两碗糖水》。" type="button">查看档案 →</button>
+        </article>
+        <article class="tq-creator-card">
+          <div class="tq-creator-top">
+            <span class="tq-creator-avatar" style="background:linear-gradient(135deg,#93b4dd,#5d7fa8)">周</span>
+            <div><h3>周末取景器</h3><span>城市探索 · 纪实</span></div>
+          </div>
+          <p>用周末两天时间拍一座城市。偏好清晨与黄昏，认为人少的时候街道才会说真话。</p>
+          <div class="tq-creator-stats"><span>作品 <b>97</b></span><span>关注者 <b>6.1万</b></span></div>
+          <button class="tq-creator-link" data-tq-author="周末取景器" data-tq-bio="城市纪实创作者，坚持用周末两天完成一座城市的取景。喜欢自然光与空旷街道，代表作《六点半的城，八点半的人》。" type="button">查看档案 →</button>
+        </article>
+        <article class="tq-creator-card">
+          <div class="tq-creator-top">
+            <span class="tq-creator-avatar" style="background:linear-gradient(135deg,#c2a9ea,#8f6bc9)">林</span>
+            <div><h3>林间访谈录</h3><span>人物访谈 · 深度</span></div>
+          </div>
+          <p>提问比回答更重要。她的访谈不追热点，只追那些愿意把故事说完整的人。</p>
+          <div class="tq-creator-stats"><span>作品 <b>52</b></span><span>关注者 <b>9.3万</b></span></div>
+          <button class="tq-creator-link" data-tq-author="林间访谈录" data-tq-bio="人物访谈创作者，专注长期关系与普通人的情感史。采访风格克制，问题多于结论。代表作《十七封信，十年异地》。" type="button">查看档案 →</button>
+        </article>
+        <article class="tq-creator-card">
+          <div class="tq-creator-top">
+            <span class="tq-creator-avatar" style="background:linear-gradient(135deg,#a8ddc8,#4f8a76)">顾</span>
+            <div><h3>顾此工作室</h3><span>创作幕后 · 技术</span></div>
+          </div>
+          <p>一个小而稳的拍摄团队，愿意公开全部工作流程。他们说幕后不神秘，只是更笨拙。</p>
+          <div class="tq-creator-stats"><span>作品 <b>41</b></span><span>关注者 <b>4.6万</b></span></div>
+          <button class="tq-creator-link" data-tq-author="顾此工作室" data-tq-bio="拍摄团队账号，公开完整幕后流程与器材方案，主张把复杂的事讲简单。代表作《一个镜头拍了四十七遍》。" type="button">查看档案 →</button>
+        </article>
+        <article class="tq-creator-card">
+          <div class="tq-creator-top">
+            <span class="tq-creator-avatar" style="background:linear-gradient(135deg,#ffb3a7,#d1655f)">许</span>
+            <div><h3>许愿三分</h3><span>日常碎片 · 短片</span></div>
+          </div>
+          <p>每天拍三秒，坚持了四年。她的素材库像一本打开就会下雨的日记。</p>
+          <div class="tq-creator-stats"><span>作品 <b>210</b></span><span>关注者 <b>15.2万</b></span></div>
+          <button class="tq-creator-link" data-tq-author="许愿三分" data-tq-bio="日常碎片创作者，坚持每天拍三秒已四年。擅长以碎片剪辑还原生活质感。代表作《我们中间隔了一整个夏天》。" type="button">查看档案 →</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 影像墙 -->
+  <section class="tq-wall" id="tqWall">
+    <div class="tq-wrap">
+      <div class="tq-sec-head">
+        <span class="tq-sec-label">社区影像墙</span>
+        <h2>用户上传的高光帧</h2>
+        <p>来自社区共创挑战的片段，每一张都在说一句没说完的话。</p>
+      </div>
+      <div class="tq-wall-grid">
+        <figure class="tq-wall-item w2 h2">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 700'%3E%3Cdefs%3E%3ClinearGradient id='w1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffdfe7'/%3E%3Cstop offset='1' stop-color='%23f39bba'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='700' fill='url(%23w1)'/%3E%3Ccircle cx='400' cy='320' r='150' fill='%23fff' opacity='.45'/%3E%3Cpath d='M400 400c-56-46-104-86-104-134 0-52 70-64 104-16 34-48 104-36 104 16 0 48-48 88-104 134z' fill='%23d9506f' opacity='.85'/%3E%3Cpath d='M0 560 Q200 500 400 560 T800 550 V700 H0Z' fill='%23fff' opacity='.35'/%3E%3C/svg%3E" alt="社区用户拍摄的巨型心形光斑画面">
+          <figcaption class="tq-wall-cap">共创挑战 · 心动瞬间</figcaption>
+        </figure>
+        <figure class="tq-wall-item">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='w2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23cfe4f2'/%3E%3Cstop offset='1' stop-color='%2389b3d6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23w2)'/%3E%3Cpath d='M0 220 L90 140 L170 220 Z' fill='%23648cba'/%3E%3Cpath d='M140 220 L240 110 L340 220 Z' fill='%234a7099'/%3E%3Ccircle cx='320' cy='70' r='26' fill='%23fff6cf'/%3E%3C/svg%3E" alt="用户拍摄的清晨山野剪影">
+          <figcaption class="tq-wall-cap">清晨出片</figcaption>
+        </figure>
+        <figure class="tq-wall-item">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='w3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffe7cc'/%3E%3Cstop offset='1' stop-color='%23e5a97c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23w3)'/%3E%3Ccircle cx='140' cy='120' r='36' fill='%23fff' opacity='.7'/%3E%3Ccircle cx='270' cy='120' r='36' fill='%23fff' opacity='.7'/%3E%3Cpath d='M104 160 q36 26 72 0 M234 160 q36 26 72 0' stroke='%23b4683f' stroke-width='4' fill='none' opacity='.7'/%3E%3C/svg%3E" alt="用户拍摄的厨房暖光糖水片段">
+          <figcaption class="tq-wall-cap">厨房暖光</figcaption>
+        </figure>
+        <figure class="tq-wall-item w2">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 300'%3E%3Cdefs%3E%3ClinearGradient id='w4' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23e2d6f6'/%3E%3Cstop offset='1' stop-color='%23b79ce0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='300' fill='url(%23w4)'/%3E%3Cg fill='%23fff' opacity='.55'%3E%3Crect x='60' y='100' width='110' height='140' rx='8'/%3E%3Crect x='200' y='130' width='90' height='110' rx='8'/%3E%3Crect x='330' y='90' width='120' height='150' rx='8'/%3E%3Crect x='480' y='120' width='100' height='120' rx='8'/%3E%3Crect x='610' y='80' width='120' height='160' rx='8'/%3E%3C/g%3E%3C/svg%3E" alt="用户上传的旧信件与纸页陈列画面">
+          <figcaption class="tq-wall-cap">旧信片场 · 用户共创</figcaption>
+        </figure>
+        <figure class="tq-wall-item">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='w5' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23ffe6ec'/%3E%3Cstop offset='1' stop-color='%23ff9db2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23w5)'/%3E%3Cpath d='M200 220c-30-26-56-46-56-72 0-28 38-34 56-9 18-25 56-19 56 9 0 26-26 46-56 72z' fill='%23fff' opacity='.75'/%3E%3C/svg%3E" alt="用户拍摄的告白心形特写">
+          <figcaption class="tq-wall-cap">告白特写</figcaption>
+        </figure>
+        <figure class="tq-wall-item">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='w6' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23b9dfd0'/%3E%3Cstop offset='1' stop-color='%235f9683'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23w6)'/%3E%3Cpath d='M0 230 Q100 190 200 230 T400 220 V300 H0Z' fill='%233f6459' opacity='.55'/%3E%3Ccircle cx='90' cy='80' r='18' fill='%23fff3cf' opacity='.85'/%3E%3Cpath d='M200 230 V140' stroke='%23fff' stroke-width='4' opacity='.6'/%3E%3Cpath d='M200 150 q-40-24-66-8' stroke='%23fff' stroke-width='4' fill='none' opacity='.5'/%3E%3C/svg%3E" alt="用户拍摄的户外草地与路灯杆">
+          <figcaption class="tq-wall-cap">户外片段</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="tq-voice" id="tqVoice">
+    <div class="tq-wrap">
+      <div class="tq-sec-head">
+        <span class="tq-sec-label">社区声音</span>
+        <h2>他们怎么说</h2>
+        <p>来自评论区、投稿信箱与线下分享会的真实反馈，未做修饰。</p>
+      </div>
+      <div class="tq-voice-grid">
+        <article class="tq-voice-card">
+          <div class="tq-voice-head"><span class="tq-avatar" style="background:#e5577a">孟</span><div><b>孟小满</b><span>关注两年 · 观众</span></div></div>
+          <p>其实我不太爱看煽情的东西，但这个品牌的片子有分寸感。它不硬逼你哭，只是把细节摆好，然后退到一边。上周看到两碗糖水那支，我给自己煮了一锅。</p>
+        </article>
+        <article class="tq-voice-card">
+          <div class="tq-voice-head"><span class="tq-avatar" style="background:#5d7fa8">程</span><div><b>程野</b><span>投稿者 · 三次入选</span></div></div>
+          <p>投稿流程是我见过最省心的，反馈很具体，不是模板回复。第二次被退回的时候，编辑写了三百多字告诉我哪里节奏松了，那次改完确实不一样。</p>
+        </article>
+        <article class="tq-voice-card">
+          <div class="tq-voice-head"><span class="tq-avatar" style="background:#8f6bc9">苏</span><div><b>苏叶</b><span>关注三个月 · 观众</span></div></div>
+          <p>画质是真的好，投屏看也不糊。我一开始还担心这类题材会拍得黏糊，结果很克制。希望多出一点访谈，那种慢慢讲的节奏现在太少了。</p>
+        </article>
+        <article class="tq-voice-card">
+          <div class="tq-voice-head"><span class="tq-avatar" style="background:#4f8a76">罗</span><div><b>罗一舟</b><span>同行 · 影视从业者</span></div></div>
+          <p>从专业角度看，他们的幕后内容挺实在，愿意把光位和机位都放出来。这种分享在行业里不多见，对新人很友好，看得出来是想认真做内容生态的。</p>
+        </article>
+        <article class="tq-voice-card">
+          <div class="tq-voice-head"><span class="tq-avatar" style="background:#dd8a4f">沈</span><div><b>沈阿姨</b><span>线下活动参与者</span></div></div>
+          <p>我五十多岁了，是女儿带来看的。线下分享会那天，几个年轻人讲自己拍的东西，讲得认真，我听得也挺感动。年纪大也能看懂，这就很好。</p>
+        </article>
+        <article class="tq-voice-card">
+          <div class="tq-voice-head"><span class="tq-avatar" style="background:#d1655f">陈</span><div><b>陈默</b><span>关注一年 · 观众</span></div></div>
+          <p>唯一的建议是更新再勤一点。不过想想他们每条都做得挺慢的，也就算了。宁可这样，也别为了快而水。口碑是一点一点攒的，我懂。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 灵感与榜单 -->
+  <section class="tq-inspire" id="tqInspire">
+    <div class="tq-wrap">
+      <div class="tq-sec-head">
+        <span class="tq-sec-label">创作灵感</span>
+        <h2>给正在犹豫要不要开机的你</h2>
+        <p>来自编辑部的选题建议与本月热度排行，希望帮你跨过最难的第一步。</p>
+      </div>
+      <div class="tq-inspire-grid">
+        <div class="tq-inspire-card">
+          <h3>本周三个可落地的选题</h3>
+          <p>适合手机拍摄，不需要额外器材，三天内可以完成。</p>
+          <div class="tq-idea-list">
+            <div class="tq-idea">
+              <span class="tq-idea-index">01</span>
+              <div><b>《你上次说想我是什么时候》</b><span>拍摄一次电话通话的前后三十秒，不做旁白，只保留呼吸和停顿。真实比台词更有力量。</span></div>
+            </div>
+            <div class="tq-idea">
+              <span class="tq-idea-index">02</span>
+              <div><b>《同一路线，走两遍》</b><span>同一条路，晴天与雨天各拍一次，用剪辑把两种情绪叠在一起，形成对照。</span></div>
+            </div>
+            <div class="tq-idea">
+              <span class="tq-idea-index">03</span>
+              <div><b>《冰箱里的第三层》</b><span>打开冰箱，看谁的东西放在哪里。生活秩序本身就是一段关系说明书。</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="tq-rank-card">
+          <h3>本月口碑榜</h3>
+          <p>由社区投票与完播率综合生成，每月更新一次。</p>
+          <div class="tq-rank-list">
+            <div class="tq-rank-row"><span class="tq-rank-num">1</span>路灯下的第三把伞<span class="tq-rank-hot">9.6</span></div>
+            <div class="tq-rank-row"><span class="tq-rank-num">2</span>十七封信，十年异地<span class="tq-rank-hot">9.4</span></div>
+            <div class="tq-rank-row"><span class="tq-rank-num">3</span>冬天要煮两碗糖水<span class="tq-rank-hot">9.2</span></div>
+            <div class="tq-rank-row"><span class="tq-rank-num">4</span>把喜欢说成晚安<span class="tq-rank-hot">9.0</span></div>
+            <div class="tq-rank-row"><span class="tq-rank-num">5</span>六点半的城，八点半的人<span class="tq-rank-hot">8.8</span></div>
+            <div class="tq-rank-row"><span class="tq-rank-num">6</span>一个镜头拍了四十七遍<span class="tq-rank-hot">8.7</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 官方动态 -->
+  <section class="tq-news" id="tqNews">
+    <div class="tq-wrap">
+      <div class="tq-sec-head">
+        <span class="tq-sec-label">企业动态</span>
+        <h2>官方发布与内容更新</h2>
+        <p>品牌活动、专题进展、规则调整，都会在这里第一时间同步。</p>
+      </div>
+      <div class="tq-news-list">
+        <article class="tq-news-item">
+          <span class="tq-news-date">2026.11.18</span>
+          <div><h3>「冬日心动篇」第十二期上线，同步开启年度投票</h3><p>本期收录三支新作，投票入口持续开放至 12 月 20 日，结果将在年度分享会上公布。</p></div>
+          <span class="tq-news-tag">专题更新</span>
+        </article>
+        <article class="tq-news-item">
+          <span class="tq-news-date">2026.11.12</span>
+          <div><h3>创作挑战「三秒钟的靠近」报名通道开启</h3><p>不限器材，只需提交三段三秒素材，入选作品将由签约创作者协助完成成片。</p></div>
+          <span class="tq-news-tag">比赛报名</span>
+        </article>
+        <article class="tq-news-item">
+          <span class="tq-news-date">2026.11.05</span>
+          <div><h3>投稿规范更新：新增音频授权说明</h3><p>为保障创作者权益，投稿时需确认配乐授权来源，平台已同步上线授权指引页面。</p></div>
+          <span class="tq-news-tag">规则公告</span>
+        </article>
+        <article class="tq-news-item">
+          <span class="tq-news-date">2026.10.28</span>
+          <div><h3>线下影像分享会（第三期）顺利结束</h3><p>共 68 位社区成员到场，四位创作者分享拍摄经验，现场放映了三支未公开片段。</p></div>
+          <span class="tq-news-tag">社区活动</span>
+        </article>
+        <article class="tq-news-item">
+          <span class="tq-news-date">2026.10.16</span>
+          <div><h3>高清成片规范正式执行</h3><p>所有官方发布内容统一以高清标准输出，历史作品将在年内完成画质重制与回传。</p></div>
+          <span class="tq-news-tag">品质升级</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="tq-faq" id="tqFaq">
+    <div class="tq-wrap">
+      <div class="tq-sec-head">
+        <span class="tq-sec-label">帮助中心</span>
+        <h2>常见问题</h2>
+        <p>投稿、授权、合作与社区规则，点击展开查看说明。</p>
+      </div>
+      <div class="tq-faq-grid">
+        <details open>
+          <summary>投稿需要具备什么条件？</summary>
+          <p>作品需为本人原创或已获完整授权，画质清晰、声音可用即可，不限器材与时长。首次投稿建议控制在 3 至 8 分钟，叙事完整优先于技术炫技。提交后一般五个工作日内收到具体反馈。</p>
+        </details>
+        <details>
+          <summary>平台的影像可以转载或二次使用吗？</summary>
+          <p>所有官方发布内容均为原创正版，转载前需通过联系入口提交申请，注明用途与范围。未获授权的搬运、裁剪、去水印行为，我们将依法维护创作者权益。</p>
+        </details>
+        <details>
+          <summary>参与创作挑战需要付费吗？</summary>
+          <p>不需要。创作挑战、专题征集与年度投票均为社区免费活动，任何以平台名义收取费用的行为都非官方发起，请谨慎辨别并及时反馈。</p>
+        </details>
+        <details>
+          <summary>如何申请成为签约创作者？</summary>
+          <p>连续两次投稿入选，或单支作品进入月度口碑榜前十，即可获得签约邀请。签约后享有拍摄支持、选题共建与成片分发等权益，具体条款以官方沟通为准。</p>
+        </details>
+        <details>
+          <summary>品牌是否接受商业合作？</summary>
+          <p>接受，但遵循内容优先原则。合作内容会明确标注，且不参与社区口碑榜评选。我们希望商业合作与原创内容保持清晰的边界，这既是对观众负责，也是对品牌口碑负责。</p>
+        </details>
+        <details>
+          <summary>线下分享会如何报名？</summary>
+          <p>每期活动前两周在官方动态发布报名入口，名额有限，按提交顺序确认。活动不收费，场地由合作空间提供，具体信息以当期公告为准。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系投稿 -->
+  <section class="tq-contact" id="tqContact">
+    <div class="tq-wrap">
+      <div class="tq-contact-card">
+        <div>
+          <h2>把你的三秒钟，交给这里</h2>
+          <p>无论是完整成片还是一段随手拍下的片段，都欢迎通过投稿入口递交。我们的编辑会认真看完每一份材料，并给出具体的修改建议。品牌长期开放合作洽谈、内容授权与线下活动共建，期待与你一起把温暖的内容做得更扎实。</p>
+          <div class="tq-contact-actions">
+            <button class="tq-btn tq-btn-primary" data-tq-open="submit" type="button">立即投稿</button>
+            <button class="tq-btn tq-btn-ghost" data-tq-open="share" type="button">分享本页</button>
+            <button class="tq-btn tq-btn-ghost" data-tq-open="feedback" type="button">反馈建议</button>
+          </div>
+        </div>
+        <div class="tq-contact-info">
+          <div class="tq-contact-row"><b>投稿信箱</b><span>submit@tangxin-image.cn</span></div>
+          <div class="tq-contact-row"><b>商务合作</b><span>partner@tangxin-image.cn</span></div>
+          <div class="tq-contact-row"><b>内容授权</b><span>license@tangxin-image.cn</span></div>
+          <div class="tq-contact-row"><b>工作时间</b><span>周一至周五 10:00–18:30</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="tq-footer">
+  <div class="tq-wrap">
+    <div class="tq-footer-grid">
+      <div class="tq-footer-brand">
+        <strong>91糖心情深叉喔</strong>
+        <p>原创治愈情感影像品牌官方网站。持续运营、正版高清、社区共建，专注把真实的温柔记录成可回看的作品。</p>
+      </div>
+      <div class="tq-footer-col">
+        <h4>内容</h4>
+        <a href="#tqFocus">焦点内容</a>
+        <a href="#tqFeed">热门影像</a>
+        <a href="#tqSeries">专题企划</a>
+        <a href="#tqWall">影像墙</a>
+      </div>
+      <div class="tq-footer-col">
+        <h4>社区</h4>
+        <a href="#tqCreators">创作者矩阵</a>
+        <a href="#tqVoice">社区声音</a>
+        <a href="#tqInspire">创作灵感</a>
+        <a href="#tqNews">官方动态</a>
+      </div>
+      <div class="tq-footer-col">
+        <h4>支持</h4>
+        <a href="#tqFaq">帮助中心</a>
+        <a href="#tqContact">投稿联系</a>
+        <a href="#tqAbout">品牌故事</a>
+        <a href="#tqTop">返回顶部</a>
+      </div>
+    </div>
+    <div class="tq-footer-bottom">
+      <span>© 2026 91糖心情深叉喔 官方网站 · 版权所有 · 内容未经授权禁止转载</span>
+      <span><a href="#tqAbout">关于我们</a> · <a href="#tqFaq">使用条款</a> · <a href="#tqContact">联系方式</a> · 备案号：糖心备 20260118 号</span>
+    </div>
+  </div>
+</footer>
+
+<button class="tq-totop" id="tqTotop" type="button" aria-label="回到顶部">↑</button>
+<div class="tq-toast" id="tqToast" role="status" aria-live="polite"></div>
+
+<!-- 通用弹窗 -->
+<div class="tq-modal" id="tqModal" role="dialog" aria-modal="true" aria-labelledby="tqModalTitle">
+  <div class="tq-modal-box">
+    <button class="tq-modal-close" id="tqModalClose" type="button" aria-label="关闭">✕</button>
+    <div id="tqModalContent"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('tqToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-on'); }, 2200);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('tqBurger');
+  var nav = document.getElementById('tqNav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('is-open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* 搜索反馈 */
+  var searchForm = document.getElementById('tqSearchForm');
+  var searchInput = document.getElementById('tqSearchInput');
+  var searchEcho = document.getElementById('tqSearchEcho');
+  var keywords = ['糖水','重逢','访谈','城市','心动','幕后','晚安','信封','投稿','创作者'];
+  searchForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var q = (searchInput.value || '').trim();
+    if(!q){
+      searchEcho.textContent = '请输入关键词，例如：重逢、糖水、访谈。';
+      searchEcho.classList.add('is-on');
+      return;
+    }
+    var hit = keywords.filter(function(k){ return q.indexOf(k) > -1 || k.indexOf(q) > -1; });
+    if(hit.length){
+      searchEcho.textContent = '已找到与「' + q + '」相关的内容方向：' + hit.join('、') + '。可前往热门影像与专题企划查看。';
+    }else{
+      searchEcho.textContent = '暂未匹配到「' + q + '」的站内条目，已为你推荐热门影像区，或可通过投稿入口告诉我们你想看的内容。';
+    }
+    searchEcho.classList.add('is-on');
+    document.getElementById('tqFeed').scrollIntoView({behavior:'smooth', block:'start'});
+  });
+
+  /* 标签筛选 */
+  var chips = document.querySelectorAll('[data-tq-chip]');
+  var cards = document.querySelectorAll('#tqVideoGrid .tq-video-card');
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      chips.forEach(function(c){ c.classList.remove('is-active'); });
+      chip.classList.add('is-active');
+      var cat = chip.getAttribute('data-tq-chip');
+      cards.forEach(function(card){
+        var matched = (cat === 'all') || (card.getAttribute('data-tq-cat') === cat);
+        card.style.display = matched ? '' : 'none';
+      });
+    });
+  });
+
+  /* 点赞 */
+  document.querySelectorAll('[data-tq-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var numEl = btn.querySelector('[data-tq-like-num]');
+      var n = parseInt(numEl.textContent, 10) || 0;
+      var liked = btn.classList.toggle('is-liked');
+      numEl.textContent = liked ? (n + 1) : Math.max(0, n - 1);
+      toast(liked ? '已点赞，感谢你的喜欢' : '已取消点赞');
+    });
+  });
+
+  /* 收藏 */
+  document.querySelectorAll('[data-tq-save]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var saved = btn.classList.toggle('is-saved');
+      btn.textContent = saved ? '★' : '☆';
+      toast(saved ? '已加入收藏，稍后可在个人页查看' : '已取消收藏');
+    });
+  });
+
+  /* 弹窗 */
+  var modal = document.getElementById('tqModal');
+  var modalContent = document.getElementById('tqModalContent');
+  var modalClose = document.getElementById('tqModalClose');
+
+  function openModal(html){
+    modalContent.innerHTML = html;
+    modal.classList.add('is-on');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(){
+    modal.classList.remove('is-on');
+    document.body.style.overflow = '';
+  }
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+
+  /* 评论 */
+  document.querySelectorAll('[data-tq-comment]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var title = btn.getAttribute('data-title') || '该作品';
+      openModal(
+        '<h3>评论《' + title + '》</h3>' +
+        '<p class="tq-modal-sub">留下你的观后感，编辑会在两个工作日内精选展示。</p>' +
+        '<label for="tqCmtName">昵称</label><input id="tqCmtName" type="text" placeholder="怎么称呼你">' +
+        '<label for="tqCmtText">评论内容</label><textarea id="tqCmtText" placeholder="哪一帧最打动你？"></textarea>' +
+        '<button class="tq-modal-submit" id="tqCmtSend" type="button">提交评论</button>'
+      );
+      document.getElementById('tqCmtSend').addEventListener('click', function(){
+        var txt = document.getElementById('tqCmtText').value.trim();
+        if(!txt){ toast('评论内容不能为空'); return; }
+        closeModal();
+        toast('评论已提交，感谢你认真看完');
+      });
+    });
+  });
+
+  /* 作者档案 */
+  document.querySelectorAll('[data-tq-author]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-tq-author');
+      var bio = btn.getAttribute('data-tq-bio');
+      openModal(
+        '<h3>' + name + '</h3>' +
+        '<p class="tq-modal-sub">签约创作者 · 档案</p>' +
+        '<p style="font-size:13.5px;color:#6f5560;line-height:1.8">' + bio + '</p>' +
+        '<button class="tq-modal-submit" id="tqFollow" type="button">关注 TA</button>'
+      );
+      document.getElementById('tqFollow').addEventListener('click', function(){
+        closeModal();
+        toast('已关注 ' + name + '，新作品将优先推送');
+      });
+    });
+  });
+
+  /* 打开指定弹窗 */
+  function submitForm(){
+    return '<h3>投稿入口</h3>' +
+      '<p class="tq-modal-sub">作品需为原创或已获授权，五个工作日内回复具体意见。</p>' +
+      '<label for="tqSubName">联系人</label><input id="tqSubName" type="text" placeholder="你的称呼">' +
+      '<label for="tqSubContact">联系方式</label><input id="tqSubContact" type="text" placeholder="邮箱或社交账号">' +
+      '<label for="tqSubType">作品类型</label>' +
+      '<select id="tqSubType"><option>情感短片</option><option>生活记录</option><option>城市探索</option><option>人物访谈</option><option>创作幕后</option></select>' +
+      '<label for="tqSubDesc">作品简述</label><textarea id="tqSubDesc" placeholder="讲一讲这支片子想表达什么，以及拍摄中难忘的细节"></textarea>' +
+      '<button class="tq-modal-submit" id="tqSubSend" type="button">提交投稿</button>';
+  }
+  function shareForm(){
+    return '<h3>分享本页</h3>' +
+      '<p class="tq-modal-sub">把 91糖心情深叉喔 分享给同样喜欢温柔影像的人。</p>' +
+      '<div class="tq-share-row">' +
+      '<button class="tq-share-btn" data-tq-share="微信" type="button"><b>微</b>微信</button>' +
+      '<button class="tq-share-btn" data-tq-share="微博" type="button"><b>博</b>微博</button>' +
+      '<button class="tq-share-btn" data-tq-share="QQ" type="button"><b>Q</b>QQ</button>' +
+      '</div>' +
+      '<button class="tq-modal-submit" id="tqCopyLink" type="button">复制页面链接</button>';
+  }
+  function feedbackForm(){
+    return '<h3>反馈建议</h3>' +
+      '<p class="tq-modal-sub">内容问题、体验建议、侵权举报都可在此提交，我们会逐条查看。</p>' +
+      '<label for="tqFbType">反馈类型</label>' +
+      '<select id="tqFbType"><option>体验建议</option><option>内容问题</option><option>侵权举报</option><option>商务合作</option></select>' +
+      '<label for="tqFbText">详细说明</label><textarea id="tqFbText" placeholder="请尽量描述清楚，便于我们定位问题"></textarea>' +
+      '<button class="tq-modal-submit" id="tqFbSend" type="button">提交反馈</button>';
+  }
+
+  document.querySelectorAll('[data-tq-open]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var kind = btn.getAttribute('data-tq-open');
+      if(kind === 'submit'){ openModal(submitForm()); bindSubmit(); }
+      if(kind === 'share'){ openModal(shareForm()); bindShare(); }
+      if(kind === 'feedback'){ openModal(feedbackForm()); bindFeedback(); }
+    });
+  });
+
+  function bindSubmit(){
+    var send = document.getElementById('tqSubSend');
+    if(!send) return;
+    send.addEventListener('click', function(){
+      var name = document.getElementById('tqSubName').value.trim();
+      var contact = document.getElementById('tqSubContact').value.trim();
+      if(!name || !contact){ toast('请填写联系人与联系方式'); return; }
+      closeModal();
+      toast('投稿已提交，编辑会在五个工作日内回复你');
+    });
+  }
+  function bindShare(){
+    document.querySelectorAll('[data-tq-share]').forEach(function(b){
+      b.addEventListener('click', function(){
+        toast('已唤起' + b.getAttribute('data-tq-share') + '分享面板');
+      });
+    });
+    var copy = document.getElementById('tqCopyLink');
+    if(copy){
+      copy.addEventListener('click', function(){
+        var link = location.href;
+        function done(){ toast('页面链接已复制'); }
+        function fallback(){
+          var ta = document.createElement('textarea');
+          ta.value = link; ta.style.position = 'fixed'; ta.style.opacity = '0';
+          document.body.appendChild(ta); ta.select();
+          try{ document.execCommand('copy'); done(); }catch(e){ toast('复制失败，请手动复制地址栏链接'); }
+          document.body.removeChild(ta);
+        }
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(link).then(done).catch(fallback);
+        }else{ fallback(); }
+      });
+    }
+  }
+  function bindFeedback(){
+    var send = document.getElementById('tqFbSend');
+    if(!send) return;
+    send.addEventListener('click', function(){
+      var txt = document.getElementById('tqFbText').value.trim();
+      if(!txt){ toast('请填写详细说明'); return; }
+      closeModal();
+      toast('反馈已收到，我们会尽快处理');
+    });
+  }
+
+  /* 回到顶部 */
+  var totop = document.getElementById('tqTotop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 420){ totop.classList.add('is-on'); }
+    else{ totop.classList.remove('is-on'); }
+  }, {passive:true});
+  totop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 数据滚动 */
+  var counters = document.querySelectorAll('[data-tq-count]');
+  var counted = false;
+  function runCount(){
+    if(counted) return;
+    counted = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute('data-tq-count'), 10) || 0;
+      var start = 0, dur = 900, t0 = null;
+      function step(ts){
+        if(!t0) t0 = ts;
+        var p = Math.min((ts - t0) / dur, 1);
+        el.textContent = Math.round(start + (target - start) * p);
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting) runCount(); });
+    }, {threshold:.4});
+    var heroStats = document.querySelector('.tq-hero-stats');
+    if(heroStats) io.observe(heroStats);
+  }else{
+    runCount();
+  }
+
+})();
+</script>
+</body>
+  </html>
